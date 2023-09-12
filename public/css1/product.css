@@ -1,0 +1,107 @@
+/* Ton style CSS personnalisé ici */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #E6FFCC; /* Vert clair */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #FFA500; /* Orange */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color: #FFA500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF6347; /* Changer la couleur en survol */
+}
+
+
+
+.details-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFA500; /* Orange */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+
+}
+
+.details-link:hover {
+    background-color: #FF6347; /* Changer la couleur en survol */
+}
+/* Ton style CSS3 personnalisé ici */
+
+.container1 {
+    /* Styles pour la classe "container" existante */
+    text-align: center;
+}
+
+.button-section {
+    margin-top: 20px; /* Ajoute de la marge en haut pour séparer le bouton et le lien */
+}
+
+.details-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFA500; /* Orange */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.details-link:hover {
+    background-color: #FF6347; /* Changer la couleur en survol */
+}
+

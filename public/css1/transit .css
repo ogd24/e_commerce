@@ -1,0 +1,52 @@
+
+  .header {
+    background-color: #FF5722;
+    color: white;
+    text-align: center;
+
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    margin: 20px;
+
+
+
+}
+
+/* Style du bouton "Message" */
+ .button {
+    background-color: #7fad39;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style du bouton "Message" au survol */
+.button:hover {
+    background-color: green;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Style de l'en-tête orange */
+table thead th {
+    /* background-color: #FF5722; */
+    background-color: green;
+
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+

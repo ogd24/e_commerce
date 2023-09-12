@@ -1,0 +1,136 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #be2edd;
+    overflow: hidden;
+ }
+ .wrapper{
+    position: relative;
+    width: 400px;
+    height: 500px;
+ }
+ .form-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 2;
+    transition: transform .5s easy in ease-out,left .5s easy in ease-out;
+
+ }
+ .wrapper .show-sign  .form-wrapper .Sign-in{
+left: -850px;
+transition-delay: 0s;
+ }
+
+ .wrapper .form-wrapper .Sign-Up{
+transform: translateX(850px);
+transition-delay: 0s;
+
+ }
+ .wrapper .show-sign  .form-wrapper .Sign-Up{
+    transform: translateX(0);
+ }
+ .input-group{
+    position: relative;
+    margin: 30px 0;
+ }
+ .input-group label {
+position: absolute;
+top: 50%;
+left: 5px;
+ transform: translateY(-50%);
+font-size: #333;
+padding: 0 5px;
+pointer-events: none;
+ }
+ .input-group input{
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: #333;
+    padding: 0 10px;
+    background: transparent;
+border: 1px solid #333;
+ outline: none;
+border-radius: 5px;
+transition: .5s;
+ }
+ .input-group input:focus~label,
+ .input-group input:valid~label{
+    top: 0;
+font-size: 20px;
+background-color: #fff;
+color: #be2edd;
+
+ }
+ .remember{
+
+    margin: -15px 0 15px ;
+
+ }
+ .remember label{
+    color: #333;
+    font-size: 14px;
+ }
+ .remember label input{
+    color:  #be2edd;
+ }
+
+
+.btn{
+position: relative;
+top: 0;
+left: 0;
+
+width: 100%;
+height: 40px;
+background: #be2edd;
+box-shadow: 0 5px 10px;
+font-size: 16px;
+color: #fff;
+font-weight: 500;
+cursor: pointer;
+border-radius: 5px;
+border: none;
+outline: none;
+
+
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: #be2edd;
+}
+.sign-link{
+    font-size: 14px;
+  text-align: center;
+margin: 25px 0;
+}
+.sign-link p{
+    color: #333;
+}
+.sign-link p a{
+    color: #be2edd;
+    text-decoration: none;
+    font-weight: 600;
+}
+.sign-link p a:hover{
+    text-decoration: underline;
+}
+
