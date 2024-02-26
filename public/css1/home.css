@@ -1,0 +1,53 @@
+.products__slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product__item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product__img img {
+    max-width: 100%;
+}
+
+/* Vous pouvez personnaliser davantage les styles selon vos besoins */
+.products__slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product__item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product__img img {
+    max-width: 100%;
+    height: auto; /* Pour maintenir la proportion d'origine de l'image */
+    object-fit: cover; /* Pour ajuster l'image dans le conteneur sans déformer */
+    border-radius: 8px; /* Pour ajouter des coins arrondis */
+}
+
+.add-to-cart-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-more-link {
+    color: #3498db;
+    text-decoration: none;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Vous pouvez personnaliser davantage les styles selon vos besoins */

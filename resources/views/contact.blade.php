@@ -28,7 +28,23 @@
 
 @include('components.nav')
 
-@include('components.nav3')
+<section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="breadcrumb__text">
+                    <h2>Contactez-nous</h2>
+                    <div class="breadcrumb__option">
+                    <a href="{{route('Acceuil.sotre')}}">Acceuil</a>
+                    <a href="{{route('contact.store')}}">Contact</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 
@@ -55,7 +71,7 @@
                     <div class="contact__widget">
                         <span class="icon_pin_alt"></span>
                         <h4>Address</h4>
-                        <p>Avenue Charles De Gaulle Road 11378 OUAGADOUGOU</p>
+                        <p>Avenue Maurice Yaméogo Rue 12 KOUDOUGOU</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 text-center">
@@ -105,16 +121,17 @@
                     </div>
                 </div>
             </div>
-            <form action="#">
+            <form action="{{ route('Message.store') }}" method="POST">
+                @csrf
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Votre Nom Complet">
+                        <input type="text" placeholder="Votre Nom Complet" name="nom">
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" placeholder="Votre Email">
+                        <input type="text" placeholder="Votre Email" name="email">
                     </div>
                     <div class="col-lg-12 text-center">
-                        <textarea placeholder="Votre message"></textarea>
+                        <textarea placeholder="Votre message" name="message"></textarea>
                         <button type="submit" class="site-btn">Envoyer</button>
                     </div>
                 </div>

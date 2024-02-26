@@ -7,14 +7,24 @@ use Illuminate\Http\Request;
 
 class RechercheController extends Controller
 {
-    public function search(Request $request)
-{
-    $q = $request->input('q'); // Récupérez le terme de recherche depuis le formulaire
 
-    $resultats = Product::where('name', 'like', "%$q%")
-        ->orWhere('description', 'like', "%$q%")
-        ->get();
+    public function rechercherProduits(Request $request)
+    {
+        $query = $request->input('q');
 
-    return view('Acceuil', compact('resultats'));
-}
+
+        $results = Product::where('name', 'LIKE', '%' . $query . '%')
+            ->orWhere('description', 'LIKE', '%' . $query . '%')
+            ->orWhere('detail', 'LIKE', '%' . $query . '%')
+            ->orWhere('Nos_points_de_vente', 'LIKE', '%' . $query . '%')
+            ->get();
+
+       
+         return view('recherche', ['results' => $results, 'query' => $query]);
+
+
+
+
+    }
+
 }

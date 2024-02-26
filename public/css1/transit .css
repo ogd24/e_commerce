@@ -7,8 +7,26 @@
     transition: background-color 0.3s;
     border-radius: 10px;
     margin: 20px;
+}
+.header2 {
 
+    color: #FF5722;
 
+    text-align: center;
+font-size: 24px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    margin: 20px;
+}
+.header1 {
+    background-color: #FF5722;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    height: 50px;
+    width: 200px;
+    margin-left: 400px;
 
 }
 
@@ -48,5 +66,28 @@ table thead th {
     color: white;
     text-align: center;
     transition: background-color 0.3s;
+}
+.image-style {
+    max-width: 100px; /* Par exemple, définissez la largeur maximale souhaitée */
+    height: auto;     /* Pour conserver les proportions de l'image */
+}
+/* Style pour le bouton "Modifier" */
+.btn-modifier {
+    background-color: #FF5722;
+    color: white; /* Texte en blanc pour une meilleure visibilité */
+    border: none;
+    padding: 8px 16px; /* Ajustez la taille du bouton selon vos besoins */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer;
+}
+
+/* Style pour le bouton "Supprimer" */
+.btn-supprimer {
+    background-color: green;
+    color: white; /* Texte en blanc pour une meilleure visibilité */
+    border: none;
+    padding: 8px 16px; /* Ajustez la taille du bouton selon vos besoins */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer;
 }
 

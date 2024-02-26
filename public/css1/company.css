@@ -1,17 +1,31 @@
-/* Style du formulaire */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+     /* background-color: #23242a; */
+     background-color: rgb(248, 81, 25);
+
+}
+h2{
+    color: orangered;
+    text-align: center;
+    text-decoration: underline 5px;
+}
+.box form{
+
+    inset: 4px;
+     background:  rgb(249, 252, 249);
+
+    padding: 50px 40px;
+    border-radius: 8px;
+
 }
 
-/* Style des champs de saisie */
+
 input[type="text"],
 input[type="email"],
-input[type="tel"],
+input[type="number"],
 input[type="password"],
 textarea {
     width: 100%;
@@ -22,19 +36,31 @@ textarea {
     font-size: 16px;
 }
 
-/* Style du bouton d'inscription */
+
 button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
+    background-color: green;
+    /* color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 3px;
     font-size: 16px;
     cursor: pointer;
+     */
+     display: inline-block;
+     padding: 10px 20px;
+   width: 200px;
+     border: 2px solid #ccc;
+     border-radius: 5px;
+     color: #333;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     justify-content: center;
+     text-align: ;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: orangered;
 }
 
 /* Style pour les liens dans le formulaire */

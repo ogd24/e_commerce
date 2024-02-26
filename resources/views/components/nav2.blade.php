@@ -1,7 +1,7 @@
 <section class="hero hero-normal">
     <div class="container">
         <div class="row">
-            {{-- <div class="col-lg-3">
+             <div class="col-lg-3">
                 <div class="hero__categories">
                     <div class="hero__categories__all">
                         <i class="fa fa-bars"></i>
@@ -21,17 +21,17 @@
                         <li><a href="#">Fresh Bananas</a></li>
                     </ul>
                 </div>
-            </div> --}}
+            </div>
             <div class="col-lg-1"> </div>
             <div class="col-lg-8">
                 <div class="hero__search">
-                    {{-- <div class="hero__search__form">
+                    <div class="hero__search__form">
                         <form action="#">
 
                             <input type="text" placeholder="Que désirez_vous?">
                             <button type="submit" class="site-btn">SEARCH</button>
                         </form>
-                    </div> --}}
+                    </div> 
 
                 </div>
             </div>

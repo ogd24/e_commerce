@@ -1,0 +1,67 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles de base pour la navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    margin-left: 250px;
+}
+
+/* Liste non ordonnée pour les onglets */
+.navbar ul {
+    list-style-type: none;
+}
+
+/* Style des éléments de la liste (onglets) */
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Style des liens dans les onglets */
+.navbar ul li a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Changement de couleur au survol */
+.navbar ul li a:hover {
+    color: orange;
+}
+
+/* Style des boutons dans la navbar */
+.navbar-buttons {
+    float: right;
+    margin-right: 20px;
+}
+
+.add-product-button,
+.logout-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Changement de couleur au survol pour les boutons */
+.add-product-button:hover,
+.logout-button:hover {
+    background-color: orange;
+}

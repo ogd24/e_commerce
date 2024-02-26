@@ -7,6 +7,7 @@
     <title>Document</title>
     <!-- CSS Bootstrap (ajoutez ces lignes dans la section head de votre fichier HTML) -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
 <div>
 
@@ -25,7 +26,7 @@
 
                       <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4 form-header ">Sign up</p>
 
-                        <form class="mx-1 mx-md-4" action="{{ route('TransitPost') }}" method="post" enctype="multipart/form-data">
+                        <form class="mx-1 mx-md-4" action="{{ route('TransitPost') }}" method="post"enctype="multipart/form-data" >
                         @csrf
                             <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>

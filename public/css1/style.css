@@ -19,11 +19,36 @@ body{
      background-color: #fffbfb;
 
 }
+
+        .submit-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: white; /* Fond blanc */
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Animation de changement de couleur de fond */
+        }
+
+        /* Styles de survol pour l'animation */
+        .submit-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Styles pour l'animation au clic */
+        .submit-button:active {
+            transform: scale(0.95);
+            transition: transform 0.1s ease;
+        }
+
+
 .box{
     position: relative;
     width: 380px;
     height: 420px;
-      background-color: #1c1c1c;
+      background-color: #f0e7e7;
 
   border-radius: 8px;
   overflow: hidden;
@@ -35,12 +60,14 @@ top: -50%;
 left: -50%;
 width: 380px;
 height: 420px;
-background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+background: linear-gradient(0deg,transparent,transparent,green,green,green);
 z-index: 1;
 animation: animate 6s linear infinite;
 transform-origin: bottom right;
 
 }
+
+
 
 .box::after{
     content: '';
@@ -49,7 +76,7 @@ transform-origin: bottom right;
    left: -50%;
    width: 380px;
    height: 420px;
-   background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+   background: linear-gradient(0deg,transparent,transparent,green,green,green);
    z-index: 1;
    animation: animate 6s linear infinite;
    transform-origin: bottom right;
@@ -68,7 +95,7 @@ animation-delay: -3s;
    left: -50%;
    width: 380px;
    height: 420px;
-   background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+   background: linear-gradient(0deg,transparent,transparent,#FF5722,#FF5722,#FF5722);
    z-index: 1;
    animation: animate 6s linear infinite;
    transform-origin: bottom right;
@@ -82,7 +109,7 @@ animation-delay: -3s;
    left: -50%;
    width: 380px;
    height: 420px;
-   background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+   background: linear-gradient(0deg,transparent,transparent,#FF5722,#FF5722,#FF5722);
    z-index: 1;
    animation: animate 6s linear infinite;
    transform-origin: bottom right;
@@ -216,7 +243,7 @@ margin-top: 10px;
    left: -50%;
    width: 380px;
    height: 620px;
-   background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,#45f3ff);
+   background: linear-gradient(0deg,transparent,transparent,green,green,green);
    z-index: 1;
    animation: animate 6s linear infinite;
    transform-origin: bottom right;
@@ -229,7 +256,7 @@ margin-top: 10px;
    left: -50%;
    width: 380px;
    height: 620px;
-   background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+   background: linear-gradient(0deg,transparent,transparent,#FF5722,#FF5722,#FF5722);
    z-index: 1;
    animation: animate 6s linear infinite;
    transform-origin: bottom right;
@@ -243,7 +270,7 @@ margin-top: 10px;
    left: -50%;
    width: 380px;
    height: 620px;
-   background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,#ff2770);
+   background: linear-gradient(0deg,transparent,transparent,#FF5722,#FF5722,#FF5722);
    z-index: 1;
    animation: animate 6s linear infinite;
    transform-origin: bottom right;

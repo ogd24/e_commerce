@@ -8,15 +8,13 @@ use Illuminate\Http\Request;
 class categoryController extends Controller
 {
     public function type(){
-        
+
         return view('category');
     }
 
     public function categorie(Request $request){
         $request->validate([
             'name' => 'required|',
-
-
         ]);
         $categorie = new Category();
         $categorie->name = $request->input('name');
@@ -25,5 +23,10 @@ class categoryController extends Controller
 
         // return redirect()->intended('/login');
         return 'ok';
+}
+public function categoryVue(){
+    $categories = Category::all();
+    return view('products.categoryListe',compact('categories'));
+
 }
 }

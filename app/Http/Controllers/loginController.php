@@ -19,24 +19,25 @@ class loginController extends Controller
 
         if (Auth::attempt($credentials)  && Auth::user()->roles_id === 1) {
             $request->session()->regenerate();
-            // return redirect()->route('home');
-            // return redirect()->route('afficher');
-            return 'ok';
+             return redirect()->route('Admin.store');
+
+
 
         } elseif (Auth::attempt($credentials)  && Auth::user()->roles_id === 2) {
             $request->session()->regenerate();
-            // return redirect()->route('home');
-            return 'ok';
-            // return redirect()->route('afficher');
+             return redirect()->route('Admincompagny.store');
+
         } elseif (Auth::attempt($credentials)  && Auth::user()->roles_id === 3) {
             $request->session()->regenerate();
-            return redirect()->route('valider');
-            // return redirect()->route('afficher');
+            return redirect()->route('AdminTransitaire.store');
+
         }elseif (Auth::attempt($credentials)  && Auth::user()->roles_id === 4) {
             $request->session()->regenerate();
-            return redirect()->route('valider');
-            // return redirect()->route('afficher'); }
+            return redirect()->route('Modéraeur.store');
 
+        }elseif (Auth::attempt($credentials)  && Auth::user()->roles_id === 5) {
+            $request->session()->regenerate();
+            return redirect()->route('Acceuil.sotre');
     }  else {
         // L'authentification a échoué
         return redirect()->back()->withErrors(['email' => 'Les informations d\'identification sont incorrectes.'])->withInput();
@@ -50,17 +51,6 @@ class loginController extends Controller
 public function logout()
 {
     Auth::logout();
-    return redirect('TransitPost');
+    return redirect()->route('inscription.store');
 }
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -38,10 +38,7 @@ class TransiteController extends Controller
                 $client = new User();
                 $client->nom = $request->input('nom');
                 $client->email = $request->input('email');
-                if ($request->hasFile('picture')) {
-                    $imagePath = $request->file('picture')->store('images', 'public');
-                    $client->picture = $imagePath;
-                }
+
 
                 $client->adresse = $request->input('adresse');
                 $client->telephone = $request->input('telephone');
@@ -55,6 +52,12 @@ class TransiteController extends Controller
                 $client->telephone = $request->input('telephone');
                 $client->password = bcrypt($request->password);
                 $client->roles_id = 3;
+                if ($picture= $request->file('picture')) {
+                    $destinationPath = 'images/';
+                    $imagePath = date('YmdHis') . "." . $picture->getClientOriginalName();
+                    $picture->move($destinationPath, $imagePath);
+                    $client['picture'] = "$imagePath";
+                }
                 $client->save();
 
 

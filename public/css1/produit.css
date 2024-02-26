@@ -1,71 +1,67 @@
-/* Styles pour le formulaire */
-.container {
+
+body{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-     /* background-color: #FF5722; */
-     background-color: #FF5722;
-    /* background: linear-gradient(to bottom, #00FF00, #FF5722); */
+    min-height: 100vh;
+     /* background-color: #23242a; */
+     background-color: rgb(240, 61, 12);
 
-    border-radius: 8px;
+}
+.box {
+    max-width: 400px;
+    margin: 0 auto;
     padding: 20px;
-}
 
-h2 {
-    color: #0f0f0f;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 0.1em;
-    margin-bottom: 20px;
+
+    inset: 4px;
+     background:  rgb(249, 252, 249);
+
+    padding: 50px 40px;
+    border-radius: 8px;
+
 }
-.form1 {
-    max-width: 400px; /* Largeur maximale du formulaire */
-    margin: 0 auto; /* Centrer le formulaire horizontalement */
-    padding: 20px; /* Espace intérieur autour du formulaire */
-    background-color: #7fad39; /* Couleur de fond du formulaire */
-    border: 1px solid #ccc; /* Bordure autour du formulaire */
-    border-radius: 5px; /* Coins arrondis */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
-  }
+   
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-label {
-    color: #f5f0f0;
-    font-size: 0.9em;
+.form-group label {
+    display: block;
+
+    margin-bottom: 5px;
 }
 
-input[type="text"],
-select,
-textarea,
-input[type="number"],
-input[type="file"] {
-    width: 100%;
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: calc(100% - 20px);
     padding: 10px;
-    border: none;
-    background: transparent;
-    outline: none;
-    border-bottom: 1px solid #0c0c0c;
-    color: #f7f6f6;
-    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-button[type="submit"] {
-    background-color: #FF5722;
-    color: #fdfbfb;
+
+
+
+
+.button-section button {
     padding: 10px 20px;
+    font-size: 16px;
+    background-color: green;
+    color: #fff;
     border: none;
-    border-radius: 4px;
-    font-size: 0.9em;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    margin-top: 20px;
 }
 
-button[type="submit"]:hover {
-    background-color: #00FF00;
+.button-section button:hover {
+    background-color: #FF5722; /* Changement de couleur au survol */
 }
-select{
-    background-color: #FF5722;
+h2{
+color: green;
 }
